@@ -13,5 +13,6 @@ $(document).ready( function() {
 
 var playSound = function(note) {
   var id = "#" + note + "Audio";
+  $(id).get(0).load();
   $(id).get(0).play();
 };
