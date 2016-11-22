@@ -12,9 +12,6 @@ $(document).ready( function() {
 });
 
 var playSound = function(note) {
-  var //id = "#" + note + "Audio", // I guess not needed?
-      file = "media/" + note + "_note.mp3",
-      audio = new Audio(file);
-
-  audio.play();
+  var id = "#" + note + "Audio";
+  $(id).get(0).play();
 };
